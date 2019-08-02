@@ -1,0 +1,32 @@
+
+
+li {
+  display: inline-block;
+  padding: 0;
+
+}
+.nlink {
+  color: white;
+  font-weight: 600;
+  width: 100%;
+  padding: 0 1rem;
+}
+.nlink:hover {
+  color: black;
+  text-decoration: none;
+}
+.nlink:active {
+  background-color: black;
+  color: gainsboro;
+}
+.icon {
+  color: white;
+}
+
+.icon:hover {
+  color: black;
+}
+
+.icon:active {
+  color:gainsboro;
+}
