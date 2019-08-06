@@ -1,4 +1,9 @@
-.Scura {
-  background-image: url('../Components/scura.png');
-  background-color: rgb(68, 149, 248);
+.homeJumbo {
+  height: 100vh;
+  background: rgb(0,3,40);
+  background: linear-gradient(157deg, rgba(0,3,40,1) 27%, rgba(246,80,152,1) 74%, rgba(227,176,103,1) 86%);
+  color: white;
+  text-align: center;
 }
+
+
