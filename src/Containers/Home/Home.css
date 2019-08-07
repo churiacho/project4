@@ -1,0 +1,29 @@
+.homeJumbo {
+  height: 100vh;
+  background: rgb(0,3,40);
+  background: linear-gradient(157deg, rgba(0,3,40,1) 27%, rgba(246,80,152,1) 74%, rgba(227,176,103,1) 86%);
+  color: white;
+  text-align: center;
+
+}
+#arrowDown {
+  transition: fill 0.5s ease
+  height 0.5s ease
+  width 0.5s ease;
+}
+#arrowDown path {
+  fill: white;
+}
+
+#arrowDown:hover {
+  height: 25pt;
+  width: 25pt;
+
+}
+#downbtn:hover {
+  background-color: transparent;
+}
+
+#home-icon path {
+  fill: white;
+}
