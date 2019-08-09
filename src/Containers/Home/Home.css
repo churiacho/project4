@@ -16,8 +16,8 @@
 }
 
 #arrowDown:hover {
-  height: 25pt;
-  width: 25pt;
+  height: 60px;
+  width: 60px;
 
 }
 #downbtn:hover {
@@ -26,4 +26,20 @@
 
 #home-icon path {
   fill: white;
+}
+#home-icon {
+  margin-right: 1rem;
+  height: 50px;
+  width: 50px;
+}
+.skillbtn path {
+  fill: white;
+}
+
+.skillbtn {
+  height: 3em;
+  width: 3em;
+  padding: 0;
+  fill: white;
+  stroke: white;
 }
