@@ -13,44 +13,41 @@ export class Navig extends Component {
   render() {
     return (
       <div>
-        <Navbar id="navbar" expand='xl' variant="dark" fixed="top" collapseOnSelect>
-        <Container fluid>
-          <Navbar.Toggle aria-controls="overlay-menu" id="toggle" data-toggle="overlay" data-target="#overlay-menu"/>
-          <Navbar.Collapse id="overlay-menu" className="overlay">
-            <Nav>
+        <Navbar id="navbar" expand='*' variant="dark" fixed="top" collapseOnSelect>
+          <Container fluid>
+            <Navbar.Toggle aria-controls="overlay-menu" id="toggle" data-toggle="overlay" data-target="#overlay-menu"/>
+            <Navbar.Collapse id="overlay-menu" className="overlay">
+              <Nav>
 
-              <Nav.Item className="nback my-4">
-                <Nav.Link eventKey="1" as={NavLink} to="/" >
-                  <p className="nlink display-4">Julia</p>      
-                </Nav.Link>
+                <Nav.Item className="nback my-4">
+                  <Nav.Link eventKey="1" as={NavLink} to="/" >
+                    <p className="nlink display-4">Julia</p>      
+                  </Nav.Link>
 
-              </Nav.Item>
+                </Nav.Item>
 
-              <Nav.Item className="nback my-4">
-              <Nav.Link eventKey="2" as={NavLink} to="/about" >
-                  <p className="nlink display-4">About</p>      
-                </Nav.Link>
-              </Nav.Item>
+                <Nav.Item className="nback my-4">
+                <Nav.Link eventKey="2" as={NavLink} to="/about" >
+                    <p className="nlink display-4">About</p>      
+                  </Nav.Link>
+                </Nav.Item>
 
-              <Nav.Item className="nback my-4">
-              <Nav.Link eventKey="3" as={NavLink} to="/contact" >
-                  <p className="nlink display-4">Contact</p>      
-                </Nav.Link>
-              </Nav.Item>
-              
+                <Nav.Item className="nback my-4">
+                <Nav.Link eventKey="3" as={NavLink} to="/contact" >
+                    <p className="nlink display-4">Contact</p>      
+                  </Nav.Link>
+                </Nav.Item>
+                
 
-              <Nav.Item className="nback my-4">
-              <Nav.Link eventKey="4" as={NavLink} to="/scura" >
-                  <p className="nlink display-4">Scura</p>      
-                </Nav.Link>
-              </Nav.Item>
-              
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-
-
-
+                <Nav.Item className="nback my-4">
+                <Nav.Link eventKey="4" as={NavLink} to="/scura" >
+                    <p className="nlink display-4">Scura</p>      
+                  </Nav.Link>
+                </Nav.Item>
+                
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
       </Navbar>      
 
       <Switch>
