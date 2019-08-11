@@ -15,7 +15,7 @@ export class Footer extends Component {
           </Row>
         <Row className="justify-content-md-center" style={{ marginTop: '2rem'}}>
             <Col>
-              <Button variant="link" href="https://www.linkedin.com/in/julia-ohyoon-jo/" className="p-0">
+              <Button variant="link" href="https://www.linkedin.com/in/julia-ohyoon-jo/" target="_blank" className="p-0">
               <svg id="snsIcon" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
               <metadata>
               Created by potrace 1.15, written by Peter Selinger 2001-2017
@@ -46,7 +46,7 @@ export class Footer extends Component {
 
             </Col>
             <Col >
-              <Button variant='link' id="snsbtn" className="p-0" href="https://github.com/churiacho" >
+              <Button variant='link' id="snsbtn" className="p-0" href="https://github.com/churiacho" target="_blank" >
               <svg version="1.1" id="snsIcon" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" viewBox="0 0 438.549 438.549">
                 <g>
                   <path d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
@@ -74,7 +74,7 @@ export class Footer extends Component {
               </Button>
             </Col>
             <Col>
-              <Button variant="link" id="snsbtn" href="https://codepen.io/julia-jo/" className="p-0">
+              <Button variant="link" id="snsbtn" href="https://codepen.io/julia-jo/" target="_blank" className="p-0">
                 <svg id="snsIcon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
                   <path d="M216 1169l603 402v-359l-334-223zm-62-144l193-129-193-129v258zm819 546l603-402-269-180-334 223v359zm-77-493l272-182-272-182-272 
                   182zm-411-275l334-223v-359l-603 402zm960 93l193 129v-258zm-138-93l269-180-603-402v359zm485-180v546q0 41-34 64l-819 546q-21 13-43 
@@ -83,7 +83,7 @@ export class Footer extends Component {
               </Button>
             </Col>
             <Col >
-              <Button variant="link" id="snsbtn" href="https://www.instagram.com/churiacho/" className="p-0">
+              <Button variant="link" id="snsbtn" href="https://www.instagram.com/churiacho/" target="_blank" className="p-0">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" id="snsIcon" viewBox="0 0 1280.000000 1280.000000"
                 preserveAspectRatio="xMidYMid meet">
                   <metadata>
