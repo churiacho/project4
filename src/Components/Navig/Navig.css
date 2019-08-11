@@ -3,12 +3,14 @@
   text-align: center;
   z-index: 2;
 }
+
 #toggle{
   position: absolute;
   right: 0;
   top: 0;
   z-index: 2;
 }
+
 .overlay {
   height: 100vh;
   width: 100vw;
@@ -31,6 +33,7 @@
 .nback:hover {
   background-color: white;
 }
+
 .nlink:active {
  color: gray;
 }
