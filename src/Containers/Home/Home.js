@@ -21,7 +21,7 @@ export class Home extends Component {
               </Col>
             </Row>
             <Row>
-              <h2 style={{fontFamily: "monospace"}}>Full Stack Developer in Development</h2>
+              <h2 style={{fontFamily: "monospace"}}>Full Stack Developer in Web</h2>
             </Row>
             <Row className="my-5">
               <Col id="reactcol">
