@@ -1,28 +1,45 @@
-import React, { Component } from 'react';
-import './Footer.css';
+import React, { Component } from "react";
+import "./Footer.css";
 
-import { Container, Col, Row, Button } from 'react-bootstrap';
+import { Container, Col, Row, Button } from "react-bootstrap";
 
 export class Footer extends Component {
   render() {
     return (
       <footer>
         <Container>
-                  <Row style={{border: '1px solid orange', margin: '1rem'}}>
+          <Row style={{ border: "1px solid orange", margin: "1rem" }}>
             <Col>
-             <h1>Footer Stuff</h1> 
+              <h1>Footer Stuff</h1>
             </Col>
           </Row>
-        <Row className="justify-content-md-center" style={{ marginTop: '2rem'}}>
+          <Row
+            className="justify-content-md-center"
+            style={{ marginTop: "2rem" }}
+          >
             <Col>
-              <Button variant="link" href="https://www.linkedin.com/in/julia-ohyoon-jo/" target="_blank" className="p-0">
-              <svg id="snsIcon" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
-              <metadata>
-              Created by potrace 1.15, written by Peter Selinger 2001-2017
-              </metadata>
-              <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
-              stroke="none">
-                <path d="M2200 12793 c-234 -23 -378 -53 -565 -114 -341 -112 -655 -309 -930
+              <Button
+                variant="link"
+                href="https://www.linkedin.com/in/julia-ohyoon-jo/"
+                target="_blank"
+                className="p-0"
+              >
+                <svg
+                  id="snsIcon"
+                  version="1.0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1280.000000 1280.000000"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <metadata>
+                    Created by potrace 1.15, written by Peter Selinger 2001-2017
+                  </metadata>
+                  <g
+                    transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                    stroke="none"
+                  >
+                    <path
+                      d="M2200 12793 c-234 -23 -378 -53 -565 -114 -341 -112 -655 -309 -930
                 -584 -389 -390 -609 -831 -687 -1380 -19 -132 -19 -8498 0 -8630 78 -548 299
                 -993 686 -1381 388 -387 833 -608 1381 -686 132 -19 8498 -19 8630 0 549 78
                 990 298 1380 687 389 390 609 831 687 1380 19 132 19 8498 0 8630 -53 375
@@ -39,17 +56,31 @@ export class Footer extends Component {
                 -1773 l0 -1643 -959 0 -959 0 2 2895 1 2895 957 0 958 0 2 -407 3 -408 53 77
                 c116 172 308 374 462 489 274 205 597 328 965 368 121 13 486 5 610 -13z
                 m-5075 -3001 l0 -2895 -962 2 -963 3 -3 2880 c-1 1584 0 2886 3 2893 3 9 206
-                12 965 12 l960 0 0 -2895z"/>
-              </g>
-            </svg>
+                12 965 12 l960 0 0 -2895z"
+                    />
+                  </g>
+                </svg>
               </Button>
-
             </Col>
-            <Col >
-              <Button variant='link' id="snsbtn" className="p-0" href="https://github.com/churiacho" target="_blank" >
-              <svg version="1.1" id="snsIcon" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" viewBox="0 0 438.549 438.549">
-                <g>
-                  <path d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
+            <Col>
+              <Button
+                variant="link"
+                id="snsbtn"
+                className="p-0"
+                href="https://github.com/churiacho"
+                target="_blank"
+              >
+                <svg
+                  version="1.1"
+                  id="snsIcon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 438.549 438.549"
+                >
+                  <g>
+                    <path
+                      d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
                     c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
                     c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996
                     c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136
@@ -68,29 +99,57 @@ export class Footer extends Component {
                     c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146
                     c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995
                     c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906
-                    C438.536,184.851,428.728,148.168,409.132,114.573z"/>
-                </g>
-              </svg>
+                    C438.536,184.851,428.728,148.168,409.132,114.573z"
+                    />
+                  </g>
+                </svg>
               </Button>
             </Col>
             <Col>
-              <Button variant="link" id="snsbtn" href="https://codepen.io/julia-jo/" target="_blank" className="p-0">
-                <svg id="snsIcon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M216 1169l603 402v-359l-334-223zm-62-144l193-129-193-129v258zm819 546l603-402-269-180-334 223v359zm-77-493l272-182-272-182-272 
+              <Button
+                variant="link"
+                id="snsbtn"
+                href="https://codepen.io/julia-jo/"
+                target="_blank"
+                className="p-0"
+              >
+                <svg
+                  id="snsIcon"
+                  viewBox="0 0 1792 1792"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M216 1169l603 402v-359l-334-223zm-62-144l193-129-193-129v258zm819 546l603-402-269-180-334 223v359zm-77-493l272-182-272-182-272 
                   182zm-411-275l334-223v-359l-603 402zm960 93l193 129v-258zm-138-93l269-180-603-402v359zm485-180v546q0 41-34 64l-819 546q-21 13-43 
-                  13t-43-13l-819-546q-34-23-34-64v-546q0-41 34-64l819-546q21-13 43-13t43 13l819 546q34 23 34 64z"/>
-                </svg>              
+                  13t-43-13l-819-546q-34-23-34-64v-546q0-41 34-64l819-546q21-13 43-13t43 13l819 546q34 23 34 64z"
+                  />
+                </svg>
               </Button>
             </Col>
-            <Col >
-              <Button variant="link" id="snsbtn" href="https://www.instagram.com/churiacho/" target="_blank" className="p-0">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" id="snsIcon" viewBox="0 0 1280.000000 1280.000000"
-                preserveAspectRatio="xMidYMid meet">
+            <Col>
+              <Button
+                variant="link"
+                id="snsbtn"
+                href="https://www.instagram.com/churiacho/"
+                target="_blank"
+                className="p-0"
+              >
+                <svg
+                  version="1.0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="snsIcon"
+                  viewBox="0 0 1280.000000 1280.000000"
+                  preserveAspectRatio="xMidYMid meet"
+                >
                   <metadata>
-                  Created by potrace 1.15, written by Peter Selinger 2001-2017
+                    Created by potrace 1.15, written by Peter Selinger 2001-2017
                   </metadata>
-                  <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" stroke="none">
-                    <path d="M3035 12789 c-144 -13 -390 -55 -540 -94 -1169 -301 -2089 -1221
+                  <g
+                    transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                    stroke="none"
+                  >
+                    <path
+                      d="M3035 12789 c-144 -13 -390 -55 -540 -94 -1169 -301 -2089 -1221
                     -2390 -2390 -40 -157 -81 -397 -95 -560 -6 -78 -10 -1256 -10 -3346 0 -3508
                     -2 -3362 55 -3675 157 -855 646 -1617 1358 -2118 498 -350 1058 -549 1677
                     -596 214 -16 6632 -9 6750 8 576 82 1009 238 1444 519 193 125 323 230 509
@@ -101,11 +160,15 @@ export class Footer extends Component {
                     -423 -1047 -96 -130 -328 -362 -458 -458 -309 -229 -668 -373 -1047 -423 -104
                     -13 -506 -15 -3362 -15 -3591 0 -3346 -4 -3620 65 -903 228 -1571 990 -1675
                     1914 -8 68 -10 1065 -8 3386 l3 3290 28 138 c162 811 724 1453 1494 1707 132
-                    43 345 91 463 103 91 10 6571 6 6650 -3z"/>
-                    <path d="M9785 10656 c-278 -65 -491 -272 -559 -547 -23 -93 -21 -255 4 -353
+                    43 345 91 463 103 91 10 6571 6 6650 -3z"
+                    />
+                    <path
+                      d="M9785 10656 c-278 -65 -491 -272 -559 -547 -23 -93 -21 -255 4 -353
                     110 -432 583 -666 995 -493 111 46 253 160 316 253 175 258 173 598 -6 849
-                    -89 125 -211 215 -362 268 -75 26 -106 30 -208 33 -78 3 -141 -1 -180 -10z"/>
-                    <path d="M6195 9574 c-786 -62 -1494 -384 -2039 -930 -504 -503 -813 -1135
+                    -89 125 -211 215 -362 268 -75 26 -106 30 -208 33 -78 3 -141 -1 -180 -10z"
+                    />
+                    <path
+                      d="M6195 9574 c-786 -62 -1494 -384 -2039 -930 -504 -503 -813 -1135
                     -913 -1864 -24 -177 -24 -596 1 -775 71 -521 231 -950 511 -1370 436 -655
                     1087 -1123 1837 -1320 470 -123 982 -137 1457 -39 612 126 1160 422 1606 869
                     507 507 815 1133 912 1855 22 167 25 590 5 750 -94 744 -404 1383 -922 1900
@@ -113,22 +176,17 @@ export class Footer extends Component {
                     853 -207 1195 -479 113 -91 299 -283 386 -400 224 -300 361 -628 421 -1005 24
                     -154 24 -487 0 -644 -152 -971 -897 -1716 -1868 -1868 -153 -24 -499 -24 -647
                     0 -732 118 -1341 565 -1662 1220 -332 676 -298 1470 91 2114 177 292 460 575
-                    752 752 399 241 869 350 1332 310z"/>
+                    752 752 399 241 869 350 1332 310z"
+                    />
                   </g>
                 </svg>
               </Button>
             </Col>
           </Row>
         </Container>
-
-
-
       </footer>
-
-    )
+    );
   }
 }
-
-
 
 export default Footer;
