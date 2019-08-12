@@ -1,16 +1,20 @@
+.home {
+  background-image: url("./code-bg.png");
+}
+
 .homeJumbo {
   height: 100vh;
-  background: rgb(0,3,40);
-  background: linear-gradient(157deg, rgba(0,3,40,1) 27%, rgba(246,80,152,1) 74%, rgba(227,176,103,1) 86%);
+  background: rgb(0, 3, 40);
+  background: linear-gradient(157deg, rgba(0, 3, 40, 1) 27%, rgba(246, 80, 152, 1) 74%, rgba(227, 176, 103, 1) 86%);
   color: white;
   text-align: center;
+  opacity: 0.85;
+}
 
-}
 #arrowDown {
-  transition: fill 0.5s ease
-  height 0.5s ease
-  width 0.5s ease;
+  transition: fill 0.5s ease height 0.5s ease width 0.5s ease;
 }
+
 #arrowDown path {
   fill: white;
 }
@@ -18,8 +22,8 @@
 #arrowDown:hover {
   height: 60px;
   width: 60px;
-
 }
+
 #downbtn:hover {
   background-color: transparent;
 }
@@ -27,18 +31,20 @@
 #home-icon path {
   fill: white;
 }
+
 #home-icon {
   margin-right: 1rem;
   height: 50px;
   width: 50px;
 }
+
 .skillbtn path {
   fill: white;
 }
 
 .skillbtn {
-  height: 3em;
-  width: 3em;
+  height: 30pt;
+  width: 30pt;
   padding: 0;
   fill: white;
   stroke: white;

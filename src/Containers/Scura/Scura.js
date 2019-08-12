@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Container } from 'react-bootstrap';
+import React, { Component } from "react";
+import { Container } from "react-bootstrap";
 
 export class Scura extends Component {
   render() {
@@ -7,7 +7,7 @@ export class Scura extends Component {
       <Container>
         <h1>SCURA</h1>
       </Container>
-    )
+    );
   }
 }
 
