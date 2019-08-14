@@ -6,26 +6,10 @@
 }
 
 
-
-.profile path {
-  fill: #ff8801;
-  fill-opacity: 1;
-  stroke: #ff8801;
-  stroke-width: 1;
-  stroke-opacity: 1;
+#AAboutMe {
+  color: #f12fe7;
 }
 
-
-.profile1 path {
-  fill: #f12fe7;
-  fill-opacity: 1;
-  stroke: #f12fe7;
-  stroke-width: 1;
-  stroke-opacity: 1;
-}
-
-#bgRow {
-  position: absolute;
-  top: 50px;
-  opacity: 0.7;
+#MAboutMe {
+  color: #ff8801;
 }

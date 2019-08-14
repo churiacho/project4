@@ -16,7 +16,7 @@ export class About extends Component {
           <Row>
           <SideProfile />
             <Col className="my-5">
-              <h1 className="display-4" style={{color: "#f12fe7"}}>About <span style={{color: '#ff8801'}}>Me</span></h1>            
+              <h1 className="display-4" id="AAboutMe">About <span id="MAboutMe">Me</span></h1>            
             </Col>
 
           </Row>
