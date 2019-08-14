@@ -3,7 +3,7 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 import { NavLink, Route, Switch } from "react-router-dom";
 import Home from "../../Containers/Home/Home";
 import About from "../../Containers/About/About";
-import Contact from "../../Containers/Contact";
+import Boff from "../../Containers/Boff/Boff";
 import Notfound from "../../Containers/Notfound";
 import Scura from "../../Containers/Scura/Scura";
 import "./Navig.css";
@@ -41,8 +41,8 @@ export class Navig extends Component {
                 </Nav.Item>
 
                 <Nav.Item className="nback my-4">
-                  <Nav.Link eventKey="3" as={NavLink} to="/contact">
-                    <p className="nlink display-4">Contact</p>
+                  <Nav.Link eventKey="3" as={NavLink} to="/BOFF">
+                    <p className="nlink display-4">Brooklyn OFF</p>
                   </Nav.Link>
                 </Nav.Item>
 
@@ -59,7 +59,7 @@ export class Navig extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/BOFF" component={Boff} />
           <Route path="/scura" component={Scura} />}
           <Route component={Notfound} />
         </Switch>
