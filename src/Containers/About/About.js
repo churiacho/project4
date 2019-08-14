@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Image, Jumbotron } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import './About.css';
 import SideProfile from './SideProfile';
 import Bio from './Bio';
@@ -12,13 +12,15 @@ export class About extends Component {
       <div className="about">
         
 
-        <Container>
+        <Container fluid>
           <Row>
+          <SideProfile />
             <Col className="my-5">
               <h1 className="display-4" style={{color: "#f12fe7"}}>About <span style={{color: '#ff8801'}}>Me</span></h1>            
             </Col>
 
           </Row>
+
           <Row>
             <Col>
               <Bio />
@@ -26,7 +28,7 @@ export class About extends Component {
 
           </Row>
           <Row>
-            <SideProfile />
+
           </Row>
 
         </Container>   

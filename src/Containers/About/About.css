@@ -5,3 +5,27 @@
   height: 100vh;
 }
 
+
+
+.profile path {
+  fill: #ff8801;
+  fill-opacity: 1;
+  stroke: #ff8801;
+  stroke-width: 1;
+  stroke-opacity: 1;
+}
+
+
+.profile1 path {
+  fill: #f12fe7;
+  fill-opacity: 1;
+  stroke: #f12fe7;
+  stroke-width: 1;
+  stroke-opacity: 1;
+}
+
+#bgRow {
+  position: absolute;
+  top: 50px;
+  opacity: 0.7;
+}
