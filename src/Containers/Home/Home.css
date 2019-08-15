@@ -28,16 +28,6 @@
   background-color: transparent;
 }
 
-#home-icon path {
-  fill: white;
-}
-
-#home-icon {
-  margin-right: 1rem;
-  height: 50px;
-  width: 50px;
-}
-
 .skillbtn path {
   fill: white;
 }
@@ -48,4 +38,36 @@
   padding: 0;
   fill: white;
   stroke: white;
+}
+
+#rails {
+  height: 30pt;
+  width: 70pt;
+  padding: 0;
+  fill: white;
+  stroke: white;
+}
+
+@media only screen and (max-device-width: 375px) {
+  .skillbtn {
+    height: 20pt;
+    width: 20pt;
+  }
+
+  #rails {
+    height: 20pt;
+    width: 60pt;
+  }
+}
+
+@media only screen and (max-device-width: 300px) {
+  .skillbtn {
+    height: 25px;
+    width: 25px;
+  }
+
+  #rails {
+    height: 25px;
+    width: 45px;
+  }
 }

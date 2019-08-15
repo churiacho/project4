@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Footer.css";
-import Contact from './Contact';
+import Contact from './Contact.js';
 import { Container, Col, Row, Button } from "react-bootstrap";
 
 export class Footer extends Component {
