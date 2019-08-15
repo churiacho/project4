@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Footer.css";
-
+import Contact from './Contact';
 import { Container, Col, Row, Button } from "react-bootstrap";
 
 export class Footer extends Component {
@@ -8,9 +8,9 @@ export class Footer extends Component {
     return (
       <footer>
         <Container>
-          <Row style={{ border: "1px solid orange", margin: "1rem" }}>
+          <Row style={{ margin: "2rem" }}>
             <Col>
-              <h1>Footer Stuff</h1>
+              <Contact />
             </Col>
           </Row>
           <Row

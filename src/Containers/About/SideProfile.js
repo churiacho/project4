@@ -83,8 +83,8 @@ export class SideProfile extends Component {
             </g>
           </svg>
             </Col>
-          <Col xs={3}  md={2}className="marginal">
-          <svg
+            <Col xs={3}  md={2} className="marginal">
+              <svg
             className="profile"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
