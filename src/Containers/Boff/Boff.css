@@ -1,0 +1,14 @@
+.boff {
+  background: rgb(2,0,36);
+  background: linear-gradient(149deg, rgba(2,0,36,1) 9%, rgba(3,10,73,1) 27%, rgba(34,3,85,1) 64%, rgba(0,75,203,1) 93%);
+  color:rgb(255, 247, 170);
+  text-align: center;
+}
+
+header {
+  margin-bottom: 4%; 
+  padding-top: 2%;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  border-bottom: 2px solid rgb(255, 247, 170);
+}
