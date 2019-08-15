@@ -2,10 +2,8 @@
   justify-content: center;
 }
 
-#pic {
-  margin-right: -100%;
-  margin-left: -100%;
-  width: 100%;
-  min-width: 200px;
-}
 
+
+.card {
+  margin: 2rem;
+}

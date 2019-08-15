@@ -6,10 +6,10 @@ import './Bio.css';
 
 function Bio() {
   return (
-    <Container id="bio">
+    <Container id="bio" fluid>
       <Row className="justify-content-center">
-        <Col xs={3}>
-          <Image src={Pic} rounded id="pic"/>        
+        <Col xs={4} md={3}>
+          <Image fluid responsive src={Pic} rounded id="pic"/>        
         </Col>
         <Col sm={12} md={6}>
         <Card>
