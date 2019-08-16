@@ -1,0 +1,9 @@
+.scura {
+  background: rgb(72,226,255);
+  background: linear-gradient(113deg, rgba(72,226,255,1) 0%, rgba(120,97,250,1) 100%);
+}
+
+.scura header {
+
+  padding: 2rem;
+}

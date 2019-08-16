@@ -1,0 +1,14 @@
+.scroll {
+  opacity: 0.8;
+}
+
+.up {
+  height: 40pt;
+  width: 40pt;
+}
+
+.up path {
+  fill: white;
+}
+
+
