@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Image, Container, Row, Col } from "react-bootstrap";
+import { Image, Container, Row, Col, Nav } from "react-bootstrap";
 import ScuraBg from './scurabg.png';
 import Footer from '../../Components/Footer/Footer.js';
 import './Scura.css';
@@ -9,7 +9,7 @@ export class Scura extends Component {
   render() {
     return (
       <div className="scura">
-        <header id="scuraHead">
+        <header id="scrollhere" data-spy="scroll" data-target={Scroll} data-offset='0'>
          <h1>SCURA Yoo</h1>
         </header>
         <Container className="py-5">
@@ -20,8 +20,11 @@ export class Scura extends Component {
             <Image src={ScuraBg} fluid responsive/>
           </Row>
         </Container>
-        <Scroll />
-
+        <Nav.Item>
+          <Nav.Link href="#scrollhere">
+            <Scroll />
+          </Nav.Link>
+        </Nav.Item>
         <Footer />
       </div>
     );
