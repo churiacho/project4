@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import "./Home.css";
 import { Container, Jumbotron, Button, Row, Col } from "react-bootstrap";
+import Footer from '../../Components/Footer/Footer.js';
 
 export class Home extends Component {
   render() {
     return (
       <div className="home">
-        <Jumbotron fluid className="homeJumbo m-0">
-          <Container>
-            <Row className="mb-5">
+        <Jumbotron fluid className="homeJumbo p-0 m-0" >
+          <Container fluid className="m-0 p-5">
+            <Row className="mb-5 p-5">
               <Col>
                 <h1
                   className="display-3 text-uppercase text-left"
@@ -18,12 +19,12 @@ export class Home extends Component {
                 </h1>
               </Col>
             </Row>
-            <Row>
+            <Row className="px-5">
               <h2 style={{ fontFamily: "monospace", marginLeft: "1em" }}>
                 Full Stack Developer
               </h2>
             </Row>
-            <Row className="my-5">
+            <Row className="my-5 px-5">
               <Col
                 lg="5"
                 md="7"
@@ -219,9 +220,17 @@ export class Home extends Component {
             </Row>
           </Container>
         </Jumbotron>
+        <Footer 
+          bg={footerstyle}
+        />
       </div>
     );
   }
+}
+
+const footerstyle = {
+  background: "rgb(227,176,103)",
+background: "linear-gradient(200deg, rgba(227,176,103,0.8) 15%, rgba(246,80,152,0.8) 33%, rgba(0,3,40,0.8) 97%)",
 }
 
 export default Home;
