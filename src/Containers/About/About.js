@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import './About.css';
 import SideProfile from './SideProfile';
 import Bio from './Bio';
+import Footer from '../../Components/Footer/Footer.js';
 
 
 
@@ -31,11 +32,19 @@ export class About extends Component {
 
           </Row>
 
-        </Container>   
+        </Container>  
+        <Footer 
+          bg={footerstyle}
+        />
       </div>
 
     )
   }
+}
+
+const footerstyle = {
+  background: "rgb(159,242,203)",
+  background: "linear-gradient(90deg, rgba(159,242,203,1) 0%, rgba(20,101,150,1) 100%)"
 }
 
 export default About;
