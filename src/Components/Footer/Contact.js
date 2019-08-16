@@ -35,19 +35,15 @@ export class Contact extends Component {
     switch(fieldName) {
       case 'First Name':
         firstNameValid = value.length >= 2;
-        fieldValidationErrors.firstName = firstNameValid ? '' : ' is invalid';
         break;
       case 'Last Name':
         lastNameValid = value.length >= 2;
-        fieldValidationErrors.lastName = lastNameValid ? '' : ' is invalid';
         break;
       case 'Email':
         emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
-        fieldValidationErrors.email = emailValid ? '' : ' is invalid';
         break;
       case 'Message':
         msgValid = value.length >= 2;
-        fieldValidationErrors.msg = msgValid ? '' : " is invalid";
         break;
       default:
         break;
@@ -78,7 +74,7 @@ export class Contact extends Component {
         <Form className='p-10' style={{textAlign: 'left'}}>
           <Row className="justify-content-center">
             <Col md={6}>
-              <h1>Say hi!</h1>
+              <h1>Say Hi!</h1>
               <div className="panel panel-default">
                 <FormErrors formErrors={this.state.formErrors} />
               </div>

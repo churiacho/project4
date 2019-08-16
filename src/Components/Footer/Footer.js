@@ -6,7 +6,7 @@ import { Container, Col, Row, Button } from "react-bootstrap";
 export class Footer extends Component {
   render() {
     return (
-      <footer>
+      <footer style={this.props.bg}>
         <Container>
           <Row style={{ margin: "2rem" }}>
             <Col>
