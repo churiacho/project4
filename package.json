@@ -2,7 +2,7 @@
   "name": "juliajo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/churiacho/project4.git",
+  "homepage": "https://churiacho.github.io/project4",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "react": "^16.8.6",
