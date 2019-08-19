@@ -1,7 +1,11 @@
 #bio {
   justify-content: center;
+  text-align: left;
 }
 
+#bio h3 {
+  font-size: 1rem;
+}
 
 
 .card {

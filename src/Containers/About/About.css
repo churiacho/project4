@@ -2,8 +2,8 @@
   background: rgb(159,242,203);
   background: linear-gradient(90deg, rgba(159,242,203,1) 0%, rgba(20,101,150,1) 100%);
   text-align: center;
+  height: 100vh;
 }
-
 
 #AAboutMe {
   color: #f12fe7;

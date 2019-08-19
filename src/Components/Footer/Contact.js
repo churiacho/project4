@@ -14,7 +14,8 @@ export class Contact extends Component {
       firstNameValid: false,
       lastNameValid: false,
       emailValid: false, 
-      msgValid: false
+      msgValid: false,
+      msgSent: false
     }
   }
 
@@ -34,16 +35,16 @@ export class Contact extends Component {
 
     switch(fieldName) {
       case 'First Name':
-        firstNameValid = value.length >= 2;
+        firstNameValid = value.length >= 1;
         break;
       case 'Last Name':
-        lastNameValid = value.length >= 2;
+        lastNameValid = value.length >= 1;
         break;
       case 'Email':
         emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
         break;
       case 'Message':
-        msgValid = value.length >= 2;
+        msgValid = value.length >= 5;
         break;
       default:
         break;
@@ -66,22 +67,25 @@ export class Contact extends Component {
     return(error.length === 0 ? '' : 'has-error');
   }
 
-  
   render() {
 
     return (
-      <Container>
+      <Container id='form'>
         <Form className='p-10' style={{textAlign: 'left'}}>
-          <Row className="justify-content-center">
-            <Col md={6}>
-              <h1>Say Hi!</h1>
-              <div className="panel panel-default">
+          <Row>
+          <div className="panel panel-default">
                 <FormErrors formErrors={this.state.formErrors} />
-              </div>
-              <Row>
-              <Form.Group className="${this.errorClass(this.state.formErrors.firstName)}">
+              </div>  
+          </Row>
+          <Row className="mb-2">
+            <Col xs={6}>
+              <h1>Say Hi!</h1>          
+            </Col>
 
-                  <Col>
+          </Row>
+              <Row>
+                <Col>
+                  <Form.Group className="${this.errorClass(this.state.formErrors.firstName)}">
                     <Form.Label htmlFor="First Name">First Name</Form.Label>
                     <Form.Control 
                       value={this.state.firstName}
@@ -91,54 +95,72 @@ export class Contact extends Component {
                       name="First Name"
                       required
                     />
+                  </Form.Group>                
+                </Col>
 
-                  </Col>
-                </Form.Group>
-                <Form.Group className="${this.errorClass(this.state.formErrors.lastName})">
-                  <Col>
-                    <Form.Label htmlFor="Last Name">Last Name</Form.Label>
+                <Col>
+                  <Form.Group className="${this.errorClass(this.state.formErrors.lastName})">
+                      <Form.Label htmlFor="Last Name">Last Name</Form.Label>
+                      <Form.Control
+                        value={this.state.lastName}
+                        onChange={this.handleUserInput}
+                        placeholder="Smith"
+                        name="Last Name"
+                        type="text"
+                        required
+                      />
+                  </Form.Group>                
+                </Col>
+
+              </Row>
+              <Row>
+                <Col>
+                  <Form.Group className="${this.errorClass(this.state.formErrors.email)}">
+                    <Form.Label htmlFor="Email">Email address</Form.Label>
                     <Form.Control
-                      value={this.state.lastName}
-                      onChange={this.handleUserInput}
-                      placeholder="Smith"
-                      name="Last Name"
-                      type="text"
-                      required
+                    value={this.state.email}
+                    onChange={this.handleUserInput}
+                    name="Email"
+                    type="email" 
+                    placeholder="jsmith@example.com" 
+                    required
                     />
-                  </Col>
-              </Form.Group>
+                  </Form.Group>                
+                </Col>
+
+              </Row>
+             
+              <Row>
+                <Col>
+                  <Form.Group className="${this.errorClass(this.state.formErrors.msg)}">
+                    <Form.Label htmlFor="Message">Message here</Form.Label>
+                    <Form.Control 
+                    value={this.state.msg}
+                    onChange={this.handleUserInput}
+                    name="Message"
+                    as="textarea" 
+                    rows="3" 
+                    required
+                    />
+                  </Form.Group>                             
+                </Col>
+   
               </Row>
 
-              <Form.Group className="${this.errorClass(this.state.formErrors.email)}">
-                <Form.Label htmlFor="Email">Email address</Form.Label>
-                <Form.Control
-                 value={this.state.email}
-                 onChange={this.handleUserInput}
-                 name="Email"
-                 type="email" 
-                 placeholder="jsmith@example.com" 
-                 required
-                />
-              </Form.Group>
-              <Form.Group className="${this.errorClass(this.state.formErrors.msg)}">
-                <Form.Label htmlFor="Message">Message here</Form.Label>
-                <Form.Control 
-                value={this.state.msg}
-                onChange={this.handleUserInput}
-                name="Message"
-                as="textarea" 
-                rows="3" 
-                required
-                />
-              </Form.Group>
-              <Button 
-                type="submit"
-                disabled={!this.state.formValid}
-              >
-                Send Message
-              </Button>
-            </Col>
-          </Row>
+              <Row>
+                <Col>
+                  <Button 
+                    type="submit"
+                    disabled={!this.state.formValid}  
+                  >
+                    Send Message                
+                  </Button>                
+                </Col>
+
+              </Row>
+
+
+        
         </Form>
       </Container>
 

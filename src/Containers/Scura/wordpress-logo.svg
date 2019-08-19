@@ -1,24 +1,9 @@
-import React, { Component } from "react";
-import { Image, Container, Row, Col, Jumbotron } from "react-bootstrap";
-import ScuraBg from './scurabg.png';
-import Footer from '../../Components/Footer/Footer.js';
-import './Scura.css';
-
-export class Scura extends Component {
-  render() {
-    return (
-      <div className="scura">
-        <header>
-         <h1 className="display-4">
-
-           SCURA</h1>
-        </header>
-        <Container className="py-5">
-          <Row className="justify-content-center">
-            <Col>
-              <Jumbotron>
-                Made on<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-	  viewBox="0 0 430.117 430.118" className="wp">
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="430.117px" height="430.118px" viewBox="0 0 430.117 430.118" style="enable-background:new 0 0 430.117 430.118;"
+	 xml:space="preserve">
 <g>
 	<path id="WordPress" d="M0,215.059c0,118.786,96.274,215.059,215.059,215.059c118.759,0,215.059-96.272,215.059-215.059
 		C430.117,96.303,333.817,0,215.059,0C96.274,0,0,96.303,0,215.059z M16.572,215.059c0-28.775,6.196-56.082,17.191-80.78
@@ -35,17 +20,4 @@ export class Scura extends Component {
 		/>
 </g>
 
-</svg>WordPress, Scura is a luxury real estate website focused on chalets in Aspen, Colorado.
-              </Jumbotron>
-            </Col>
-            <Image src={ScuraBg} fluid responsive/>
-          </Row>
-        </Container>
-
-        <Footer />
-      </div>
-    );
-  }
-}
-
-export default Scura;
+</svg>

@@ -1,9 +1,26 @@
 .scura {
-  background: rgb(72,226,255);
-  background: linear-gradient(113deg, rgba(72,226,255,1) 0%, rgba(120,97,250,1) 100%);
+  background: rgb(238,174,202);
+background: linear-gradient(140deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 44%, rgba(12,58,112,1) 100%);
+  text-align: center;
+  color: rgb(1, 17, 9);
 }
 
 .scura header {
-
   padding: 2rem;
+  border-bottom: 2px solid black;
+}
+
+.wp{ 
+  height: 2rem;
+  width: 2rem;
+  margin: 0 0 1rem 1rem;
+}
+
+.wp path {
+  fill: rgb(1, 17, 9);
+}
+
+.scura .jumbotron {
+  background-color: inherit;
+ 
 }

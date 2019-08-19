@@ -18,7 +18,7 @@ export class Boff extends Component {
               <Jumbotron className="p-5" id="blurb">
                 Using  
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" id="boots">
+	 viewBox="0 0 64 64" enableBackground="new 0 0 64 64" id="bootsLogo">
 <g>
 	<path d="M32.2,34.8h-6.5V45h6.5c5.4,0,5.7-3.8,5.7-5.2C38,38.6,37.5,34.8,32.2,34.8z"/>
 	<path d="M55.4,0H8.6C3.8,0,0,3.8,0,8.6v46.8C0,60.2,3.8,64,8.6,64h46.8c4.7,0,8.6-3.8,8.6-8.6V8.6

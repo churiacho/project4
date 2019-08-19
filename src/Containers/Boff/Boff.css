@@ -26,13 +26,13 @@
     );
 }
 
-#boots {
+#bootsLogo {
   height: 1.3rem;
   width: 1.3rem;
   margin: 0 0.3rem 0 1.1rem;
 }
 
-#boots path {
+#bootsLogo path {
   fill: rgb(108, 19, 131);
 }
 

@@ -8,8 +8,8 @@ export class Footer extends Component {
     return (
       <footer style={this.props.bg}>
         <Container>
-          <Row style={{ margin: "2rem" }}>
-            <Col>
+          <Row className="mb-5">
+            <Col lg={{span: 8, offset: 2}}>
               <Contact />
             </Col>
           </Row>

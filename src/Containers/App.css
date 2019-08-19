@@ -1,0 +1,11 @@
+#scroll {
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  #scroll:hover {
+    background-color: white;
+    color: black;
+    opacity: 0.7;
+  }
